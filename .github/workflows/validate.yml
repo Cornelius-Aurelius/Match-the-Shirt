@@ -1,0 +1,15 @@
+name: Validate Match the Shirt
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  game-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify game script and 30-level puzzle integrity
+        run: node tests/verify.cjs
