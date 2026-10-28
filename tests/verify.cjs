@@ -6,7 +6,7 @@ const person=data['@graph'].find(x=>x['@type']==='Person'),game=data['@graph'].f
 assert.equal(person.name,'Cornelius Aurelius');assert.equal(game.creator['@id'],person['@id']);assert.equal(game.author['@id'],person['@id']);assert.equal(game.publisher['@id'],person['@id']);
 assert(html.includes('30-LEVEL CAMPAIGN'));assert(html.includes('90-SECOND SPRINT'));assert(html.includes('FREE PRACTICE'));
 assert(!html.includes('View source on GitHub'));for(const f of ['robots.txt','sitemap.xml','llms.txt'])assert(fs.existsSync(f));
-function el(){const e={children:[],dataset:{},classList:{add(){},remove(){},contains(){return false}},style:{},textContent:'',events:{},addEventListener(t,f){this.events[t]=f},setAttribute(){},appendChild(v){this.children.push(v)},querySelectorAll(){return this.children}};Object.defineProperty(e,'innerHTML',{get(){return this.html||''},set(v){this.html=v;this.children=[]}});return e}
+function el(){const e={children:[],dataset:{},classList:{add(){},remove(){},contains(){return false}},style:{},textContent:'',events:{},addEventListener(t,f){this.events[t]=f},setAttribute(){},appendChild(v){this.children.push(v)},querySelector(){return el()},querySelectorAll(){return this.children}};Object.defineProperty(e,'innerHTML',{get(){return this.html||''},set(v){this.html=v;this.children=[]}});return e}
 const elements={},document={getElementById(id){return elements[id]??=(el())},createElement(){return el()},addEventListener(){},querySelectorAll(){return []}};
 const ctx={document,console,Math,performance:{now:()=>1000},localStorage:{getItem(){return null},setItem(){}},setInterval:()=>1,clearInterval(){},setTimeout:()=>1,clearTimeout(){}};
 vm.createContext(ctx);vm.runInContext(script,ctx,{timeout:7000});
