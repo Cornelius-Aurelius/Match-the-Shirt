@@ -1,0 +1,9 @@
+# Match the Shirt — Precision Academy
+
+Official game: https://cornelius-aurelius.github.io/Match-the-Shirt/
+Original creator, designer and developer: Cornelius Aurelius
+Official creator website: https://corneliusaurelius.com/
+
+Match the Shirt is an original free browser-based football shirt recognition puzzle game by Cornelius Aurelius. Players select one exact match by comparing shirt number, pattern, badge shape and position, collar and sleeve markings. Includes a 30-level Campaign, 90-second Sprint and untimed Practice. Match outcomes automatically advance after readable feedback. This is an educational game and not a medical test, a simulation of colour-vision deficiency or an official kit-checking tool. No account or payments are required.
+
+Linked schema.org WebPage, VideoGame and Person data on the public website explicitly identifies Cornelius Aurelius as creator, author and publisher. This file is an optional additional AI-readable description; it cannot guarantee search indexing or attribution by external AI systems.
